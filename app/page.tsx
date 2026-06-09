@@ -18,14 +18,27 @@ export default function Home() {
             <Link href="/how-it-works">
               How It Works
             </Link>
-
-            <button className="px-4 py-2 border rounded">
+            <Link
+              href="/login"
+              className="px-4 py-2 border rounded"
+            >
               Login
-            </button>
+            </Link>
 
-            <button className="px-4 py-2 bg-black text-white rounded">
+            <Link
+              href="/register"
+              className="px-4 py-2 bg-black text-white rounded"
+            >
               Register
-            </button>
+            </Link>
+
+            <Link href="/products">
+              Products
+            </Link>
+
+            <Link href="/tenders">
+              Tenders
+            </Link>           
           </nav>
       </header>
 
@@ -39,13 +52,19 @@ export default function Home() {
         </p>
 
         <div className="flex justify-center gap-4">
-          <button className="px-6 py-3 bg-black text-white rounded">
+          <Link
+            href="/register"
+            className="px-6 py-3 bg-black text-white rounded"
+          >
             Register as Supplier
-          </button>
+          </Link>
 
-          <button className="px-6 py-3 border rounded">
+          <Link
+            href="/how-it-works"
+            className="px-6 py-3 border rounded"
+          >
             Learn More
-          </button>
+          </Link>
         </div>
       </section>
 
