@@ -47,7 +47,7 @@ export default function ContactPage() {
             </h3>
 
             <p>
-              Gauteng, South Africa
+              8 Angelica Avenue, Glenvista, Gauteng, South Africa
             </p>
           </div>
         </div>
