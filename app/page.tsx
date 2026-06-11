@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
+<main className="min-h-screen bg-white">
 
       <header className="flex justify-between items-center p-6 border-b">
           <div className="flex items-center">
@@ -17,36 +17,6 @@ export default function Home() {
             </h1>          
           </div>
 
-          <nav className="flex gap-4 items-center">
-              <Link href="/">
-                Home
-              </Link>
-
-              <Link href="/products">
-                Products
-              </Link>
-
-              <Link href="/services">
-                Services
-              </Link>
-
-              <Link href="/about">
-                About Us
-              </Link>
-
-              <Link href="/contact">
-                Contact
-              </Link>
-
-              <Link
-                href="/login"
-                className="px-4 py-2 bg-black text-white rounded"
-              >
-                Client Login
-              </Link> 
-
-
-          </nav>
       </header>
 
   <section className="text-center py-24 px-6">
