@@ -19,13 +19,13 @@ export default function Home() {
 
       </header>
 
-  <section className="text-center py-24 px-6">
+<section className="text-center py-24 px-6 bg-gradient-to-r from-green-900 via-green-800 to-green-700 text-white">
 
-    <h2 className="text-5xl font-bold mb-6">
+<h2 className="text-5xl font-bold mb-6 text-white">
       ICT Hardware, Office Equipment & Procurement Solutions
     </h2>
 
-        <p className="text-xl max-w-4xl mx-auto mb-10">
+        <p className="text-xl max-w-4xl mx-auto mb-10 text-gray-100">
           Delivering technology products, managed print services,
           software licensing and office equipment solutions for
           government departments, municipalities and corporate organisations.
@@ -34,22 +34,23 @@ export default function Home() {
         <div className="flex justify-center gap-4">
           <Link
             href="/products"
-            className="px-6 py-3 bg-black text-white rounded"
+            className="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-8 py-3 rounded"
           >
             Browse Products
           </Link>
 
           <Link
             href="/contact"
-            className="px-6 py-3 border rounded"
+            className="border border-white text-white px-8 py-3 rounded hover:bg-white hover:text-green-900"
           >
             Contact Us
           </Link>
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 px-16 py-20">
-        <div className="border rounded-lg p-6">
+      <section className="bg-gradient-to-b from-green-50 to-white py-20">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 px-16">
+          <div className="border rounded-lg p-6 bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
             <h3 className="font-bold mb-2">
               ICT Hardware
             </h3>
@@ -57,9 +58,9 @@ export default function Home() {
             <p>
               Laptops, desktops, workstations and accessories from leading technology brands.
             </p>
-        </div>
+          </div>
 
-        <div className="border rounded-lg p-6">
+          <div className="border rounded-lg p-6 bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
             <h3 className="font-bold mb-2">
               Managed Print Services
             </h3>
@@ -67,9 +68,9 @@ export default function Home() {
             <p>
               Professional print fleet management, maintenance and consumables supply.
             </p>
-        </div>
+          </div>
 
-        <div className="border rounded-lg p-6">
+          <div className="border rounded-lg p-6 bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
           <h3 className="font-bold mb-2">
             Office Equipment
           </h3>
@@ -77,7 +78,8 @@ export default function Home() {
           <p>
             Projectors, presentation systems, conferencing equipment and office solutions.
           </p>
-        </div>
+          </div>
+      </div>
       </section>
 
         <section className="max-w-6xl mx-auto py-16 text-center">
