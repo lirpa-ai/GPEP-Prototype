@@ -57,18 +57,18 @@ export default function AboutPage() {
       <div className="flex justify-center mb-8">
         <Image
           src="/images/remotlotlogroup_logo.png"
-          alt="Remotlotlo Group"
+          alt="Treadstone Trading"
             width={120}
             height={120}
         />
       </div>
 
       <h1 className="text-5xl font-bold mb-8">
-        About Remotlotlo Group
+        About Treadstone Trading
       </h1>
 
       <p className="mb-6 text-lg">
-        Remotlotlo Group is a South African technology procurement and
+        Treadstone Trading is a South African technology procurement and
         business solutions provider focused on supplying ICT hardware,
         managed print services, software licensing and office equipment
         to government departments, municipalities, educational
@@ -137,7 +137,7 @@ export default function AboutPage() {
 
      <section className="mt-12">
         <h2 className="text-3xl font-bold mb-8">
-          Why Choose Remotlotlo Group
+          Why Choose Treadstone Trading
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -162,7 +162,7 @@ export default function AboutPage() {
         </h2>
 
         <p className="max-w-3xl mx-auto text-lg mb-8">
-          Contact Remotlotlo Group today for a customised quotation
+          Contact Treadstone Trading today for a customised quotation
           tailored to your organisation's requirements.
         </p>
 

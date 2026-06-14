@@ -2,11 +2,11 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen max-w-5xl mx-auto px-6 py-16">
       <h1 className="text-5xl font-bold mb-8">
-        Contact Remotlotlo Group
+        Contact Treadstone Trading
       </h1>
 
       <p className="text-lg mb-12">
-        Contact Remotlotlo Group for product enquiries, quotations,
+        Contact Treadstone Trading for product enquiries, quotations,
         procurement opportunities and technology solutions.
       </p>
 

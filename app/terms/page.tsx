@@ -35,7 +35,7 @@ export default function TermsPage() {
       </h2>
 
       <p className="mb-6">
-        Remotlotlo Group shall not be liable for any loss or
+        Treadstone Trading shall not be liable for any loss or
         damages arising from the use of this website or reliance
         on information contained herein.
       </p>

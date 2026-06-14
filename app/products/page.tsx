@@ -201,7 +201,7 @@ const accessories = [
       </h1>
 
       <p className="text-center max-w-3xl mx-auto text-lg mb-16">
-        Remotlotlo Group supplies ICT hardware, managed print solutions,
+        Treadstone Trading supplies ICT hardware, managed print solutions,
         software licensing, office equipment and accessories from trusted
         global technology brands.
       </p>
@@ -430,7 +430,7 @@ const accessories = [
   </h2>
 
   <p className="max-w-3xl mx-auto text-lg mb-8">
-    Remotlotlo Group supplies ICT hardware, managed print services,
+    Treadstone Trading supplies ICT hardware, managed print services,
     software licensing and office technology solutions to government,
     education and corporate clients throughout South Africa.
   </p>

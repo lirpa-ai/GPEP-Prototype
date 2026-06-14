@@ -6,7 +6,7 @@ export default function PrivacyPolicyPage() {
       </h1>
 
       <p className="mb-6">
-        Remotlotlo Group respects the privacy of its customers,
+        Treadstone Trading respects the privacy of its customers,
         suppliers and website visitors. This Privacy Policy
         explains how we collect, use and protect personal
         information provided through our website and business

@@ -9,7 +9,7 @@ export default function Navbar() {
           href="/"
           className="text-xl font-bold"
         >
-          Remotlotlo Group
+          Treadstone Trading
         </Link>
 
         <nav className="flex gap-6 items-center">

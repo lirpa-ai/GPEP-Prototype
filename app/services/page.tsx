@@ -65,7 +65,7 @@ export default function ServicesPage() {
 
       <section className="mt-16 text-center">
         <h2 className="text-3xl font-bold mb-4">
-          Why Choose Remotlotlo Group?
+          Why Choose Treadstone Trading?
         </h2>
 
         <p className="max-w-3xl mx-auto text-lg">

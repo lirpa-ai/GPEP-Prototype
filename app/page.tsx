@@ -8,12 +8,12 @@ export default function Home() {
           <div className="flex items-center">
             <Image
               src="/images/remotlotlogroup_logo.png"
-              alt="Remotlotlo Group"
+              alt="Treadstone Trading"
               width={60}
               height={60}
             />
             <h1 className="text-3xl font-bold mb-4">
-              Remotlotlo Group
+              Treadstone Trading
             </h1>          
           </div>
 
