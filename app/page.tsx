@@ -7,7 +7,7 @@ export default function Home() {
       <header className="flex justify-between items-center p-6 border-b">
           <div className="flex items-center">
             <Image
-              src="/images/remotlotlogroup_logo.png"
+              src="/images/treadstonetrading_logo.png"
               alt="Treadstone Trading"
               width={60}
               height={60}

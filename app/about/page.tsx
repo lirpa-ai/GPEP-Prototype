@@ -56,10 +56,10 @@ export default function AboutPage() {
     <main className="min-h-screen max-w-5xl mx-auto px-6 py-16">
       <div className="flex justify-center mb-8">
         <Image
-          src="/images/remotlotlogroup_logo.png"
+          src="/images/treadstonetrading_logo.png"
           alt="Treadstone Trading"
-            width={120}
-            height={120}
+            width={160}
+            height={160}
         />
       </div>
 
