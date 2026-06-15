@@ -4,25 +4,14 @@ export default function Home() {
   return (
 <main className="min-h-screen bg-white">
 
-      <header className="flex justify-between items-center p-6 border-b">
-          <div className="flex items-center">
-            <Image
-              src="/images/treadstonetrading_logo.png"
-              alt="Treadstone Trading"
-              width={60}
-              height={60}
-            />
-            <h1 className="text-3xl font-bold mb-4">
-              Treadstone Trading
-            </h1>          
-          </div>
+  <div className="h-1 bg-white"></div>
 
-      </header>
+  <div className="h-2 bg-yellow-500"></div>
 
-<section className="text-center py-24 px-6 bg-gradient-to-r from-green-900 via-green-800 to-green-700 text-white">
+  <section className="text-center py-24 px-6 bg-gradient-to-r from-green-900 via-green-800 to-green-700 text-white">
 
-<h2 className="text-5xl font-bold mb-6 text-white">
-      ICT Hardware, Office Equipment & Procurement Solutions
+    <h2 className="text-5xl font-bold mb-6 text-white">
+          ICT Hardware, Office Equipment & Procurement Solutions
     </h2>
 
         <p className="text-xl max-w-4xl mx-auto mb-10 text-gray-100">
@@ -46,9 +35,9 @@ export default function Home() {
             Contact Us
           </Link>
         </div>
-      </section>
+  </section>
 
-      <section className="bg-gradient-to-b from-green-50 to-white py-20">
+  <section className="bg-gradient-to-b from-green-50 to-white py-20">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 px-16">
           <div className="border rounded-lg p-6 bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
             <h3 className="font-bold mb-2">
@@ -80,7 +69,7 @@ export default function Home() {
           </p>
           </div>
       </div>
-      </section>
+  </section>
 
         <section className="max-w-6xl mx-auto py-16 text-center">
           <h2 className="text-3xl font-bold mb-10">
@@ -212,12 +201,66 @@ export default function Home() {
         </div>
 
       </section>
-      <footer className="border-t mt-20 py-8 text-center">
-        <div className="flex justify-center gap-6">
-          <Link href="/privacy-policy">Privacy Policy</Link>
-          <Link href="/terms">Terms & Conditions</Link>
+      <div className="h-1 bg-yellow-500">
+        <footer className="bg-green-900 text-white mt-20">
+            <div className="max-w-6xl mx-auto px-6 py-12">
+
+              <div className="grid md:grid-cols-3 gap-10">
+
+                <div>
+                  <h3 className="text-xl font-bold text-yellow-400 mb-3">
+                    Treadstone Trading
+                  </h3>
+
+                  <p className="text-sm">
+                    Technology Procurement Solutions
+                  </p>
+
+                  <p className="text-sm mt-2">
+                    Delivering ICT hardware, managed print services,
+                    software licensing and office equipment solutions.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-yellow-400 mb-3">
+                    Quick Links
+                  </h4>
+
+                  <div className="flex flex-col gap-2">
+                    <Link href="/">Home</Link>
+                    <Link href="/products">Products</Link>
+                    <Link href="/about">About</Link>
+                    <Link href="/contact">Contact</Link>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-yellow-400 mb-3">
+                    Legal
+                  </h4>
+
+                  <div className="flex flex-col gap-2">
+                    <Link href="/privacy-policy">
+                      Privacy Policy
+                    </Link>
+
+                    <Link href="/terms">
+                      Terms & Conditions
+                    </Link>
+                  </div>
+                </div>
+
+              </div>
+
+              <div className="border-t border-green-700 mt-10 pt-6 text-center text-sm">
+                © 2026 Treadstone Trading. All rights reserved.
+              </div>
+
+            
+          </div>
+        </footer>
         </div>
-      </footer>
     </main>
   );
 }
