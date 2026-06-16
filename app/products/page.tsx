@@ -1,47 +1,49 @@
 export default function ProductsPage() {
- const featuredProducts = [
+
+const featuredProducts = [
   {
-    name: "Dell Latitude 5550",
-    image: "/images/products/dell-latitude-5550.jpg",
-    description: "Business laptop for enterprise environments.",
+    name: "Dell Latitude 7450",
+    image: "/images/products/dell-latitude-7450.jpg",
+    description: "Enterprise laptop for government and business users.",
+    specs: "Intel Core Ultra 7 • 16GB RAM • 512GB SSD",
+  },
+
+  {
+    name: "HP EliteBook 840 G11",
+    image: "/images/products/hp-elitebook-840-g11.jpg",
+    description: "Premium business notebook with enterprise security.",
     specs: "Intel Core Ultra 5 • 16GB RAM • 512GB SSD",
   },
 
   {
-    name: "Lenovo ThinkPad E16",
-    image: "/images/products/lenovo-thinkpad-e16.webp",
-    description: "Reliable productivity laptop for professionals.",
-    specs: "Intel Core i7 • 16GB RAM • 512GB SSD",
+    name: "Canon imageRUNNER Advance DX C3926i",
+    image: "/images/products/canon-imagerunner-advance-dx-c3926i.jpg",
+    description: "Enterprise multifunction colour printer.",
+    specs: "A3 Colour • Scan • Copy • Print",
   },
 
   {
-    name: "Epson EcoTank L6570",
-    image: "/images/products/epson-l6570.jpg",
-    description: "High-volume colour printing with low operating costs.",
-    specs: "A4 Multifunction • Duplex • Network Ready",
+    name: "Poly Studio X52",
+    image: "/images/products/poly-studio-x52.jpg",
+    description: "Professional video conferencing solution.",
+    specs: "4K Camera • AI Audio • Teams & Zoom",
   },
 
   {
-    name: "HP LaserJet Enterprise",
-    image: "/images/products/hp-laserjet.jpg",
-    description: "Fast and dependable office printing solution.",
-    specs: "40ppm • Duplex • Enterprise Security",
+    name: "Microsoft 365 Business Premium",
+    image: "/images/products/microsoft-365-business-premium.jpg",
+    description: "Productivity and security suite for organisations.",
+    specs: "Office Apps • Teams • Exchange • Security",
   },
 
   {
-    name: "Parrot Projector",
-    image: "/images/products/parrot-projector.jpg",
-    description: "Presentation and meeting-room solution.",
-    specs: "Full HD • HDMI • 4500 Lumens",
-  },
-
-  {
-    name: "Logitech MK540",
-    image: "/images/products/logitech-mk540.jpg",
-    description: "Wireless keyboard and mouse combo.",
-    specs: "2.4GHz Wireless • Long Battery Life",
+    name: "Dell Universal Dock UD22",
+    image: "/images/products/dell-universal-dock-ud22.jpg",
+    description: "Universal docking solution for modern workplaces.",
+    specs: "USB-C • Multi-Display • Power Delivery",
   },
 ];
+
 
 const ictHardwareProducts = [
   {
@@ -71,88 +73,91 @@ const ictHardwareProducts = [
     description: "Professional monitor for office productivity.",
     specs: '27" QHD • USB-C • IPS Display',
   },
+
 ];
 
 
 const managedPrintServicesProducts = [
   {
-    name: "Epson EcoTank L6570",
-    image: "/images/products/epson-ecotank-l6570.jpg",
-    description: "High-volume business printer",
+    name: "Epson Workforce Pro WF-C5890",
+    image: "/images/products/epson-workforce-pro-wf-c5890.jpg",
+    description: "High-performance business inkjet printer.",
     specs: "A4 Multifunction • Duplex • Network Ready",
   },
+
   {
-    name: "HP LaserJet Enterprise",
-    image: "/images/products/hp-laserjet.jpg",
-    description: "Enterprise laser printer",
-    specs: "40ppm • Duplex • Enterprise Security",
+    name: "HP LaserJet Enterprise M634dn",
+    image: "/images/products/hp-laserjet-enterprise-m634dn.jpg",
+    description: "Enterprise monochrome laser printer.",
+    specs: "61ppm • Duplex • Enterprise Security",
   },
+
   {
-    name: "Canon imageRUNNER 2925i",
-    image: "/images/products/canon-imagerunner-2925i.jpg",
-    description: "Multifunction office printer",
-    specs: "A3 Multifunction • Scan • Copy",
+    name: "Canon imageRUNNER Advance DX C3926i",
+    image: "/images/products/canon-imagerunner-advance-dx-c3926i.jpg",
+    description: "Colour multifunction office printer.",
+    specs: "A3 Colour • Scan • Copy • Print",
   },
+
   {
-    name: "Brother MFC-L6900DW",
-    image: "/images/products/brother-mfc-l6900-dw.jpg",
-    description: "Monochrome business printer",
+    name: "Brother MFC-L6915DW",
+    image: "/images/products/brother-mfc-l6915dw.jpg",
+    description: "Business monochrome multifunction printer.",
     specs: "50ppm • Duplex • Wireless",
   },
 ];
 
 
-
 const officeEquipment = [
   {
-    name: "Parrot Projector",
-    image: "/images/products/parrot-projector.jpg",
-    description: "Professional presentation and meeting-room solution.",
-    specs: "Full HD • HDMI • 4500 Lumens",
+    name: "BenQ EH600 Projector",
+    image: "/images/products/benq-eh600-projector.jpg",
+    description: "Smart business projector for meeting rooms.",
+    specs: "Full HD • Wireless • 3500 Lumens",
   },
 
   {
-    name: "Epson EB-FH52",
-    image: "/images/products/epson-eb-fh52.jpg",
-    description: "Wireless projector for business presentations.",
-    specs: "4000 Lumens • Full HD • Wireless",
+    name: "Poly Studio X52",
+    image: "/images/products/poly-studio-x52.jpg",
+    description: "Professional video conferencing solution.",
+    specs: "4K Camera • AI Audio • Teams & Zoom",
   },
 
   {
-    name: "Logitech Rally Bar",
-    image: "/images/products/logitech-rally-bar.jpg",
-    description: "Video conferencing solution for boardrooms.",
-    specs: "4K Camera • AI Audio • USB",
-  },
-
-  {
-    name: "Samsung Flip Pro",
-    image: "/images/products/samsung-flip-pro.jpg",
+    name: "Samsung Flip Pro WM65B",
+    image: "/images/products/samsung-flip-pro-wm65b.jpg",
     description: "Interactive display for collaboration and training.",
     specs: "65 Inch • Touchscreen • 4K UHD",
+  },
+
+  {
+    name: "Logitech Rally Plus",
+    image: "/images/products/logitech-rally-plus.jpg",
+    description: "Enterprise video conferencing system.",
+    specs: "4K Camera • Modular Audio • USB",
   },
 ];
 
 
 const softwareLicensing = [
   {
-    name: "Microsoft 365 Business",
-    image: "/images/products/microsoft365.jpg",
-    description: "Cloud productivity suite for organisations.",
-    specs: "Email • Teams • Office Apps",
+    name: "Microsoft 365 Business Premium",
+    image: "/images/products/microsoft-365-business-premium.jpg",
+    description: "Productivity and security suite for organisations.",
+    specs: "Office Apps • Teams • Exchange • Security",
   },
 
   {
-    name: "Windows 11 Pro",
-    image: "/images/products/windows11pro.jpg",
-    description: "Professional operating system for business devices.",
-    specs: "Security • Management • Productivity",
+    name: "Adobe Creative Cloud Teams",
+    image: "/images/products/adobe-creative-cloud-teams.jpg",
+    description: "Creative software suite for business teams.",
+    specs: "Photoshop • Illustrator • InDesign",
   },
 
   {
-    name: "Microsoft Defender",
-    image: "/images/products/microsoft-defender.jpg",
-    description: "Enterprise endpoint protection solution.",
+    name: "Microsoft Defender for Business",
+    image: "/images/products/microsoft-defender-business.jpg",
+    description: "Advanced endpoint protection solution.",
     specs: "Threat Protection • Endpoint Security",
   },
 
@@ -166,33 +171,36 @@ const softwareLicensing = [
 
 const accessories = [
   {
-    name: "Dell 24 Monitor",
-    image: "/images/products/dell-24-monitor.jpg",
+    name: "Samsung ViewFinity S6",
+    image: "/images/products/samsung-viewfinity-s6.jpg",
     description: "Professional monitor for office productivity.",
-    specs: '24" Full HD • HDMI • IPS Panel',
+    specs: '27" QHD • USB-C • IPS Display',
   },
 
   {
-    name: "Logitech MX 3S",
-    image: "/images/products/logitec-mx-master-3s.jpg",
-    description: "Advanced wireless productivity mouse.",
-    specs: "Wireless • USB-C • Multi-Device",
+    name: "Logitech MX Keys S",
+    image: "/images/products/logitech-mx-keys-s.jpg",
+    description: "Premium wireless keyboard for professionals.",
+    specs: "Bluetooth • Backlit Keys • Multi-Device",
   },
 
   {
-    name: "Dell WD19 Dock",
-    image: "/images/products/dell-wd19-dock.jpg",
-    description: "USB-C docking station for modern laptops.",
-    specs: "USB-C • Dual Display • Power Delivery",
+    name: "Dell Universal Dock UD22",
+    image: "/images/products/dell-universal-dock-ud22.jpg",
+    description: "Universal docking station for modern workplaces.",
+    specs: "USB-C • Multi-Display • Power Delivery",
   },
 
   {
-    name: "Logitech H390 Headset",
-    image: "/images/products/logitech-h390-headset.jpg",
-    description: "USB headset for meetings and collaboration.",
-    specs: "USB • Noise Cancelling Mic • Teams Compatible",
+    name: "Logitech Brio 4K",
+    image: "/images/products/logitech-brio-4K.jpg",
+    description: "Ultra HD webcam for conferencing and collaboration.",
+    specs: "4K Resolution • HDR • USB-C",
   },
-];
+];  
+
+
+
 
 
 
@@ -235,10 +243,10 @@ const accessories = [
 
             <p className="text-sm text-gray-600">
               {product.specs}
-              <button className="mt-4 bg-black text-white px-4 py-2 rounded">
-                Request Quote
-              </button>             
             </p>
+            <button className="mt-auto bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-4 py-2 rounded">
+              Request Quote
+            </button>
           </div>
         ))}
       </div>
@@ -282,7 +290,7 @@ const accessories = [
                 {product.specs}
               </p>
 
-              <button className="mt-auto bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-4 py-2 rounded">
+              <button className="mt-auto bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-4 py-2 rounded">              
                 Request Quote
               </button>
             </div>
@@ -432,8 +440,6 @@ const accessories = [
   </div>
 </section>
 
-
-
 <section className="mb-20">
   <h2 className="text-3xl font-bold mb-2 text-green-900">Accessories</h2>
   <div className="w-20 h-1 bg-yellow-500 mb-8"></div>
@@ -494,7 +500,7 @@ const accessories = [
 
   <a
     href="/contact"
-    className="bg-black text-white px-8 py-4 rounded text-lg"
+    className="bg-orange-400 text-black font-semibold px-8 py-4 rounded text-lg"
   >
     Request a Quotation
   </a>
