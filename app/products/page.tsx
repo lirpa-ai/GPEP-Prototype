@@ -45,28 +45,31 @@ export default function ProductsPage() {
 
 const ictHardwareProducts = [
   {
-    name: "Dell Latitude 5550",
-    image: "/images/products/dell-latitude-5550.jpg",
-    description: "Business laptop for enterprise environments.",
+    name: "Dell Latitude 7450",
+    image: "/images/products/dell-latitude-7450.jpg",
+    description: "Enterprise laptop for government and business users.",
+    specs: "Intel Core Ultra 7 • 16GB RAM • 512GB SSD",
+  },
+
+  {
+    name: "HP EliteBook 840 G11",
+    image: "/images/products/hp-elitebook-840-g11.jpg",
+    description: "Premium business notebook with enterprise security.",
     specs: "Intel Core Ultra 5 • 16GB RAM • 512GB SSD",
   },
+
   {
-    name: "Lenovo ThinkPad E16",
-    image: "/images/products/lenovo-thinkpad-e16.webp",
-    description: "Reliable productivity laptop for professionals.",
+    name: "Lenovo ThinkCentre M90s Gen5",
+    image: "/images/products/lenovo-thinkcentre-m90s-gen5.jpg",
+    description: "Compact desktop for professional workplaces.",
     specs: "Intel Core i7 • 16GB RAM • 512GB SSD",
   },
+
   {
-    name: "Dell OptiPlex 7010",
-    image: "/images/products/dell-optiplex-7010.jpg",
-    description: "Business desktop for office productivity.",
-    specs: "Intel Core i5 • 16GB RAM • 512GB SSD",
-  },
-  {
-    name: "HP ProDesk 400 G9",
-    image: "/images/products/hp-prodesk-400-g9.jpg",
-    description: "Compact desktop for modern workplaces.",
-    specs: "Intel Core i5 • 16GB RAM • 512GB SSD",
+    name: "Samsung ViewFinity S6",
+    image: "/images/products/samsung-viewfinity-s6.jpg",
+    description: "Professional monitor for office productivity.",
+    specs: '27" QHD • USB-C • IPS Display',
   },
 ];
 
@@ -197,7 +200,7 @@ const accessories = [
   return (
     <main className="min-h-screen max-w-7xl mx-auto px-6 py-16">
       <h1 className="text-4xl font-bold text-center mb-6">
-        Products & Solutions
+        Technology Products & Procurement Solutions
       </h1>
 
       <p className="text-center max-w-3xl mx-auto text-lg mb-16">
@@ -208,7 +211,7 @@ const accessories = [
 
       {/* Featured Products */}
       <section className="mb-20">
-        <h2 className="text-3xl font-bold mb-8">Featured Products</h2>
+        <h2 className="text-3xl font-bold mb-2 text-green-900">Featured Products</h2>
 
        <div className="grid md:grid-cols-3 gap-8">
         {featuredProducts.map((product) => (
@@ -241,13 +244,25 @@ const accessories = [
       </div>
       </section>
       <section className="mb-20">
-        <h2 className="text-3xl font-bold mb-8">ICT Hardware</h2>
+        <h2 className="text-3xl font-bold mb-2 text-green-900">ICT Hardware</h2>
+        <div className="w-20 h-1 bg-yellow-500 mb-8"></div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {ictHardwareProducts.map((product) => (
             <div
               key={product.name}
-              className="border rounded-lg p-6 flex flex-col"
+              className="
+                bg-white
+                rounded-lg
+                shadow-md
+                hover:shadow-xl
+                hover:-translate-y-1
+                transition
+                duration-300
+                p-6
+                flex
+                flex-col
+                "
             >
               <img
                 src={product.image}
@@ -267,7 +282,7 @@ const accessories = [
                 {product.specs}
               </p>
 
-              <button className="mt-auto bg-black text-white px-4 py-2 rounded">
+              <button className="mt-auto bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-4 py-2 rounded">
                 Request Quote
               </button>
             </div>
@@ -277,13 +292,25 @@ const accessories = [
 
 
       <section className="mb-20">
-        <h2 className="text-3xl font-bold mb-8">Managed Print Services</h2>
+        <h2 className="text-3xl font-bold mb-2 text-green-900">Managed Print Services</h2>
+        <div className="w-20 h-1 bg-yellow-500 mb-8"></div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {managedPrintServicesProducts.map((product) => (
             <div
               key={product.name}
-              className="border rounded-lg p-6 flex flex-col"
+              className="
+                bg-white
+                rounded-lg
+                shadow-md
+                hover:shadow-xl
+                hover:-translate-y-1
+                transition
+                duration-300
+                p-6
+                flex
+                flex-col
+                "
             >
               <img
                 src={product.image}
@@ -303,7 +330,7 @@ const accessories = [
                 {product.specs}
               </p>
 
-              <button className="mt-auto bg-black text-white px-4 py-2 rounded">
+              <button className="mt-auto bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-4 py-2 rounded">
                 Request Quote
               </button>
             </div>
@@ -312,15 +339,25 @@ const accessories = [
       </section> 
 
 <section className="mb-20">
-  <h2 className="text-3xl font-bold mb-8">
-    Office Equipment
-  </h2>
+  <h2 className="text-3xl font-bold mb-2 text-green-900">Office Equipment</h2>
+  <div className="w-20 h-1 bg-yellow-500 mb-8"></div>
 
   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
     {officeEquipment.map((product) => (
       <div
         key={product.name}
-        className="border rounded-lg p-6 flex flex-col"
+          className="
+          bg-white
+          rounded-lg
+          shadow-md
+          hover:shadow-xl
+          hover:-translate-y-1
+          transition
+          duration-300
+          p-6
+          flex
+          flex-col
+          "
       >
         <img
           src={product.image}
@@ -340,7 +377,7 @@ const accessories = [
           {product.specs}
         </p>
 
-        <button className="mt-auto bg-black text-white px-4 py-2 rounded">
+        <button className="mt-auto bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-4 py-2 rounded">
           Request Quote
         </button>
       </div>
@@ -349,15 +386,25 @@ const accessories = [
 </section>
 
 <section className="mb-20">
-  <h2 className="text-3xl font-bold mb-8">
-    Software Licensing
-  </h2>
+  <h2 className="text-3xl font-bold mb-2 text-green-900">Software Licensing</h2>
+<div className="w-20 h-1 bg-yellow-500 mb-8"></div>
 
   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
     {softwareLicensing.map((product) => (
       <div
         key={product.name}
-        className="border rounded-lg p-6 flex flex-col"
+          className="
+          bg-white
+          rounded-lg
+          shadow-md
+          hover:shadow-xl
+          hover:-translate-y-1
+          transition
+          duration-300
+          p-6
+          flex
+          flex-col
+          "
       >
         <img
           src={product.image}
@@ -377,7 +424,7 @@ const accessories = [
           {product.specs}
         </p>
 
-        <button className="mt-auto bg-black text-white px-4 py-2 rounded">
+        <button className="mt-auto bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-4 py-2 rounded">
           Request Quote
         </button>
       </div>
@@ -388,15 +435,25 @@ const accessories = [
 
 
 <section className="mb-20">
-  <h2 className="text-3xl font-bold mb-8">
-    Accessories
-  </h2>
-
-  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+  <h2 className="text-3xl font-bold mb-2 text-green-900">Accessories</h2>
+  <div className="w-20 h-1 bg-yellow-500 mb-8"></div>
+ 
+   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
     {accessories.map((product) => (
       <div
         key={product.name}
-        className="border rounded-lg p-6 flex flex-col"
+          className="
+          bg-white
+          rounded-lg
+          shadow-md
+          hover:shadow-xl
+          hover:-translate-y-1
+          transition
+          duration-300
+          p-6
+          flex
+          flex-col
+          "
       >
         <img
           src={product.image}
@@ -416,7 +473,7 @@ const accessories = [
           {product.specs}
         </p>
 
-        <button className="mt-auto bg-black text-white px-4 py-2 rounded">
+        <button className="mt-auto bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-4 py-2 rounded">
           Request Quote
         </button>
       </div>
