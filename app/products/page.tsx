@@ -199,12 +199,6 @@ const accessories = [
   },
 ];  
 
-
-
-
-
-
-
   return (
     <main className="min-h-screen max-w-7xl mx-auto px-6 py-16">
       <h1 className="text-4xl font-bold text-center mb-6">
@@ -217,9 +211,45 @@ const accessories = [
         global technology brands.
       </p>
 
+      <section className="mb-12">
+        <div className="max-w-2xl mx-auto">
+          <input
+            type="text"
+            placeholder="Search products..."
+            className="w-full border-2 border-green-700 rounded-lg px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-green-700"
+          />
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <div className="flex flex-wrap justify-center gap-3">
+          <button className="border border-green-800 text-green-800 px-4 py-2 rounded-lg hover:bg-green-800 hover:text-white transition">
+            Laptops
+          </button>
+
+          <button className="border border-green-800 text-green-800 px-4 py-2 rounded-lg hover:bg-green-800 hover:text-white transition">
+            Printers
+          </button>
+
+          <button className="border border-green-800 text-green-800 px-4 py-2 rounded-lg hover:bg-green-800 hover:text-white transition">
+            Monitors
+          </button>
+
+          <button className="border border-green-800 text-green-800 px-4 py-2 rounded-lg hover:bg-green-800 hover:text-white transition">
+            Accessories
+          </button>
+
+          <button className="border border-green-800 text-green-800 px-4 py-2 rounded-lg hover:bg-green-800 hover:text-white transition">
+            Software
+          </button>
+        </div>
+      </section>
+
       {/* Featured Products */}
       <section className="mb-20">
-        <h2 className="text-3xl font-bold mb-2 text-green-900">Featured Products</h2>
+        <h2 className="text-4xl font-bold mb-8 text-green-800">
+          Technology Catalogue
+        </h2>
 
        <div className="grid md:grid-cols-3 gap-8">
         {featuredProducts.map((product) => (
