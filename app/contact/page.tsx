@@ -1,9 +1,9 @@
 export default function ContactPage() {
   return (
     <main className="min-h-screen max-w-5xl mx-auto px-6 py-16">
-      <h1 className="text-5xl font-bold mb-8">
-        Contact Treadstone Trading
-      </h1>
+<h1 className="text-4xl font-semibold mb-4">
+  Contact Treadstone Trading
+</h1>
 
       <p className="text-lg mb-12">
         Contact Treadstone Trading for product enquiries, quotations,
@@ -12,33 +12,33 @@ export default function ContactPage() {
 
       {/* Contact Information */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8">
-          Contact Information
-        </h2>
+        <div className="mb-8">
+          <h2 className="text-3xl font-bold text-green-800">
+            Contact Information
+          </h2>
+          <div className="w-20 h-1 bg-yellow-500 mt-2"></div>
+        </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
           <div className="border rounded-lg p-6">
             <h3 className="text-xl font-bold mb-3">
-              Email
+              General Enquiries
+            </h3>
+             <p>
+              <a
+                href="mailto:info@treadstonetrading.net"
+                className="text-green-700 hover:text-green-800 hover:underline"
+              >
+                info@treadstonetrading.net
+              </a>
+            </p>
+          </div>
+
+          <div className="border rounded-lg p-6">
+            <h3 className="text-xl font-bold mb-3">
+              Sales & Quotations
             </h3>
 
-            <p className="mb-2">
-              <a
-                href="mailto:info@remotlotlogroup.org"
-                className="text-blue-600 hover:underline"
-              >
-                info@remotlotlogroup.org
-              </a>
-            </p>
 
-            <p>
-              <a
-                href="mailto:sales@remotlotlogroup.org"
-                className="text-blue-600 hover:underline"
-              >
-                sales@remotlotlogroup.org
-              </a>
-            </p>
           </div>
 
           <div className="border rounded-lg p-6">
@@ -47,17 +47,35 @@ export default function ContactPage() {
             </h3>
 
             <p>
-              8 Angelica Avenue, Glenvista, Gauteng, South Africa
+              Kimberley, Northern Cape    
+              <br />
+              South Africa
             </p>
           </div>
-        </div>
+
+
+          <div className="border rounded-lg p-6">
+            <h3 className="text-xl font-bold mb-3">
+              Business Hours
+            </h3>
+
+            <p>
+              Monday – Friday
+              <br />
+              08:00 – 17:00
+            </p>
+          </div>
+
       </section>
 
       {/* Contact Form */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8">
-          Send Us a Message
-        </h2>
+        <div className="mb-8">
+          <h2 className="text-3xl font-bold text-green-800">
+            Send Us a Message
+          </h2>
+          <div className="w-20 h-1 bg-yellow-500 mt-2"></div>
+        </div>
 
         <form className="space-y-6">
           <div>
@@ -110,7 +128,7 @@ export default function ContactPage() {
 
           <button
             type="submit"
-            className="bg-black text-white px-8 py-3 rounded"
+            className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-3 rounded"
           >
             Send Message
           </button>
@@ -131,7 +149,7 @@ export default function ContactPage() {
 
         <a
           href="/products"
-          className="bg-black text-white px-8 py-4 rounded"
+          className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-4 rounded"
         >
           View Products
         </a>
