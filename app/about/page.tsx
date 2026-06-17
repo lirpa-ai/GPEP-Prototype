@@ -58,39 +58,34 @@ export default function AboutPage() {
         <Image
           src="/images/treadstonetrading_logo.png"
           alt="Treadstone Trading"
-            width={160}
-            height={160}
+            width={100}
+            height={100}
         />
       </div>
 
-      <h1 className="text-5xl font-bold mb-8">
+      <h1 className="text-4xl font-bold mb-4">
         About Treadstone Trading
       </h1>
 
-      <p className="mb-6 text-lg">
-        Treadstone Trading is a South African technology procurement and
-        business solutions provider focused on supplying ICT hardware,
-        managed print services, software licensing and office equipment
-        to government departments, municipalities, educational
-        institutions and private sector organisations.
+      <p className="text-xl text-gray-600 mb-8">
+        Technology Procurement & Business Solutions Partner
       </p>
 
-      <p className="mb-6">
-        Our objective is to simplify procurement by providing reliable
-        access to quality products, trusted supplier partnerships and
-        professional support services.
-      </p>
-
-      <p>
-        We work with leading technology manufacturers and distributors
-        to deliver solutions that meet organisational requirements while
-        ensuring value, compliance and operational efficiency.
+      <p className="text-lg leading-8 max-w-4xl">
+        Treadstone Trading is a South African technology procurement partner
+        supporting government departments, municipalities, educational
+        institutions, state-owned entities and corporate organisations.
+        We specialise in ICT hardware, managed print services, software
+        licensing and office technology solutions, delivering reliable
+        products through trusted supplier partnerships.
       </p>
 
       <section className="mt-16">
-        <h2 className="text-3xl font-bold mb-4">
-          Our Mission
-        </h2>
+      <h2 className="text-4xl font-bold text-green-800 mb-2">
+        Our Mission
+      </h2>
+
+      <div className="w-20 h-1 bg-yellow-500 mb-6"></div>
 
         <p>
           To provide dependable technology products and procurement
@@ -101,9 +96,11 @@ export default function AboutPage() {
       </section>
 
       <section className="mt-16">
-        <h2 className="text-3xl font-bold mb-4">
-          Core Values
-        </h2>
+      <h2 className="text-4xl font-bold text-green-800 mb-2">
+        Core Values
+      </h2>
+
+      <div className="w-20 h-1 bg-yellow-500 mb-6"></div>
 
         <ul className="list-disc pl-6 space-y-2">
           <li>Professional Service Excellence</li>
@@ -115,15 +112,17 @@ export default function AboutPage() {
       </section>
 
       <section className="mt-16">
-        <h2 className="text-3xl font-bold mb-8">
+        <h2 className="text-4xl font-bold text-green-800 mb-2">
           What We Do
         </h2>
+
+        <div className="w-20 h-1 bg-yellow-500 mb-6"></div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service) => (
             <div
               key={service.title}
-              className="border rounded-lg p-6"
+              className="border rounded-lg p-6 shadow-sm hover:shadow-md transition"
             >
               <h3 className="text-xl font-bold mb-3">
                 {service.title}
@@ -136,15 +135,17 @@ export default function AboutPage() {
       </section>
 
      <section className="mt-12">
-        <h2 className="text-3xl font-bold mb-8">
-          Why Choose Treadstone Trading
-        </h2>
+      <h2 className="text-4xl font-bold text-green-800 mb-2">
+        Why Choose Treadstone Trading
+      </h2>
+
+      <div className="w-20 h-1 bg-yellow-500 mb-6"></div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {whyChooseUs.map((item) => (
             <div
               key={item.title}
-              className="border rounded-lg p-6"
+              className="border rounded-lg p-6 shadow-sm hover:shadow-md transition"
             >
               <h3 className="text-xl font-bold mb-3">
                 {item.title}
@@ -156,19 +157,55 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="mt-16">
+      <h2 className="text-4xl font-bold text-green-800 mb-2">
+        Industries We Serve
+      </h2>
+
+      <div className="w-20 h-1 bg-yellow-500 mb-6"></div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="border rounded-lg p-6 shadow-sm hover:shadow-md transition">
+            Government Departments
+          </div>
+
+          <div className="border rounded-lg p-6 shadow-sm hover:shadow-md transition">
+            Municipalities
+          </div>
+
+          <div className="border rounded-lg p-6 shadow-sm hover:shadow-md transition">
+            Educational Institutions
+          </div>
+
+          <div className="border rounded-lg p-6 shadow-sm hover:shadow-md transition">
+            State-Owned Entities
+          </div>
+
+          <div className="border rounded-lg p-6 shadow-sm hover:shadow-md transition">
+            Corporate Organisations
+          </div>
+
+          <div className="border rounded-lg p-6 shadow-sm hover:shadow-md transition">
+            Non-Profit Organisations
+          </div>
+        </div>
+      </section>
+
       <section className="text-center py-20">
         <h2 className="text-4xl font-bold mb-6">
-          Need ICT Solutions For Your Organisation?
+          Need a Procurement or Technology Solution?
         </h2>
 
         <p className="max-w-3xl mx-auto text-lg mb-8">
-          Contact Treadstone Trading today for a customised quotation
-          tailored to your organisation's requirements.
+          Whether you require ICT hardware, managed print services,
+          software licensing or office technology solutions, Treadstone
+          Trading is ready to assist with a customised quotation tailored
+          to your organisation's needs.
         </p>
 
         <a
           href="/contact"
-          className="bg-black text-white px-8 py-4 rounded text-lg"
+          className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-4 rounded text-lg"
         >
           Request a Quotation
         </a>

@@ -59,7 +59,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="border rounded-lg p-6 bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
+          <div className="border rounded-lg p-6 bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">git
           <h3 className="font-bold mb-2">
             Office Equipment
           </h3>
