@@ -1,4 +1,10 @@
+"use client";
+
+import { useState } from "react";
+
 export default function ProductsPage() {
+
+const [selectedCategory, setSelectedCategory] = useState("all"); 
 
 const featuredProducts = [
   {
@@ -223,27 +229,53 @@ const accessories = [
 
       <section className="mb-12">
         <div className="flex flex-wrap justify-center gap-3">
-          <button className="border border-green-800 text-green-800 px-4 py-2 rounded-lg hover:bg-green-800 hover:text-white transition">
-            Laptops
+          <button
+            onClick={() => setSelectedCategory("all")}
+          >
+            All Products
+          </button>
+  
+          <button
+            onClick={() => setSelectedCategory("ict")}
+            className="border border-green-800 text-green-800 px-4 py-2 rounded-lg"
+          >
+            ICT Hardware
           </button>
 
-          <button className="border border-green-800 text-green-800 px-4 py-2 rounded-lg hover:bg-green-800 hover:text-white transition">
-            Printers
+          <button
+            onClick={() => setSelectedCategory("managed-print")}
+          >
+            Managed Print
           </button>
 
-          <button className="border border-green-800 text-green-800 px-4 py-2 rounded-lg hover:bg-green-800 hover:text-white transition">
-            Monitors
+          <button
+            onClick={() => setSelectedCategory("office")}
+          >
+            Office Equipment
           </button>
 
-          <button className="border border-green-800 text-green-800 px-4 py-2 rounded-lg hover:bg-green-800 hover:text-white transition">
+          <button
+            onClick={() => setSelectedCategory("software")}
+          >
+            Software
+          </button>
+
+          <button
+            onClick={() => setSelectedCategory("accessories")}
+          >
             Accessories
           </button>
 
-          <button className="border border-green-800 text-green-800 px-4 py-2 rounded-lg hover:bg-green-800 hover:text-white transition">
-            Software
-          </button>
+            <p className="text-center mt-4">
+              Selected Category: {selectedCategory}
+            </p>
+
         </div>
       </section>
+
+        <p className="text-center mt-4 font-semibold">
+          Selected Category: {selectedCategory}
+        </p>
 
       {/* Featured Products */}
       <section className="mb-20">
