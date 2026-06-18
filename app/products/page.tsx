@@ -243,7 +243,7 @@ const accessories = [
           </button>
 
           <button
-            onClick={() => setSelectedCategory("managed-print")}
+            onClick={() => setSelectedCategory("print")}
           >
             Managed Print
           </button>
@@ -265,10 +265,6 @@ const accessories = [
           >
             Accessories
           </button>
-
-            <p className="text-center mt-4">
-              Selected Category: {selectedCategory}
-            </p>
 
         </div>
       </section>
