@@ -9,6 +9,7 @@ const [selectedCategory, setSelectedCategory] = useState("all");
 const featuredProducts = [
   {
     name: "Dell Latitude 7450",
+    category: "hardware",
     image: "/images/products/dell-latitude-7450.jpg",
     description: "Enterprise laptop for government and business users.",
     specs: "Intel Core Ultra 7 • 16GB RAM • 512GB SSD",
@@ -16,6 +17,7 @@ const featuredProducts = [
 
   {
     name: "HP EliteBook 840 G11",
+    category: "hardware",
     image: "/images/products/hp-elitebook-840-g11.jpg",
     description: "Premium business notebook with enterprise security.",
     specs: "Intel Core Ultra 5 • 16GB RAM • 512GB SSD",
@@ -23,6 +25,7 @@ const featuredProducts = [
 
   {
     name: "Canon imageRUNNER Advance DX C3926i",
+    category: "hardware",
     image: "/images/products/canon-imagerunner-advance-dx-c3926i.jpg",
     description: "Enterprise multifunction colour printer.",
     specs: "A3 Colour • Scan • Copy • Print",
@@ -30,6 +33,7 @@ const featuredProducts = [
 
   {
     name: "Poly Studio X52",
+    category: "office",
     image: "/images/products/poly-studio-x52.jpg",
     description: "Professional video conferencing solution.",
     specs: "4K Camera • AI Audio • Teams & Zoom",
@@ -37,6 +41,7 @@ const featuredProducts = [
 
   {
     name: "Microsoft 365 Business Premium",
+    category: "software",
     image: "/images/products/microsoft-365-business-premium.jpg",
     description: "Productivity and security suite for organisations.",
     specs: "Office Apps • Teams • Exchange • Security",
@@ -44,6 +49,7 @@ const featuredProducts = [
 
   {
     name: "Dell Universal Dock UD22",
+    category: "hardware",
     image: "/images/products/dell-universal-dock-ud22.jpg",
     description: "Universal docking solution for modern workplaces.",
     specs: "USB-C • Multi-Display • Power Delivery",
@@ -54,6 +60,7 @@ const featuredProducts = [
 const ictHardwareProducts = [
   {
     name: "Dell Latitude 7450",
+    category: "hardware",
     image: "/images/products/dell-latitude-7450.jpg",
     description: "Enterprise laptop for government and business users.",
     specs: "Intel Core Ultra 7 • 16GB RAM • 512GB SSD",
@@ -61,6 +68,7 @@ const ictHardwareProducts = [
 
   {
     name: "HP EliteBook 840 G11",
+    category: "hardware",
     image: "/images/products/hp-elitebook-840-g11.jpg",
     description: "Premium business notebook with enterprise security.",
     specs: "Intel Core Ultra 5 • 16GB RAM • 512GB SSD",
@@ -68,6 +76,7 @@ const ictHardwareProducts = [
 
   {
     name: "Lenovo ThinkCentre M90s Gen5",
+    category: "hardware",
     image: "/images/products/lenovo-thinkcentre-m90s-gen5.jpg",
     description: "Compact desktop for professional workplaces.",
     specs: "Intel Core i7 • 16GB RAM • 512GB SSD",
@@ -75,6 +84,7 @@ const ictHardwareProducts = [
 
   {
     name: "Samsung ViewFinity S6",
+    category: "hardware",
     image: "/images/products/samsung-viewfinity-s6.jpg",
     description: "Professional monitor for office productivity.",
     specs: '27" QHD • USB-C • IPS Display',
@@ -86,6 +96,7 @@ const ictHardwareProducts = [
 const managedPrintServicesProducts = [
   {
     name: "Epson Workforce Pro WF-C5890",
+    category: "print",
     image: "/images/products/epson-workforce-pro-wf-c5890.jpg",
     description: "High-performance business inkjet printer.",
     specs: "A4 Multifunction • Duplex • Network Ready",
@@ -93,6 +104,7 @@ const managedPrintServicesProducts = [
 
   {
     name: "HP LaserJet Enterprise M634dn",
+    category: "print",
     image: "/images/products/hp-laserjet-enterprise-m634dn.jpg",
     description: "Enterprise monochrome laser printer.",
     specs: "61ppm • Duplex • Enterprise Security",
@@ -100,6 +112,7 @@ const managedPrintServicesProducts = [
 
   {
     name: "Canon imageRUNNER Advance DX C3926i",
+    category: "print",
     image: "/images/products/canon-imagerunner-advance-dx-c3926i.jpg",
     description: "Colour multifunction office printer.",
     specs: "A3 Colour • Scan • Copy • Print",
@@ -107,6 +120,7 @@ const managedPrintServicesProducts = [
 
   {
     name: "Brother MFC-L6915DW",
+    category: "print",
     image: "/images/products/brother-mfc-l6915dw.jpg",
     description: "Business monochrome multifunction printer.",
     specs: "50ppm • Duplex • Wireless",
@@ -117,6 +131,7 @@ const managedPrintServicesProducts = [
 const officeEquipment = [
   {
     name: "BenQ EH600 Projector",
+    category: "office",
     image: "/images/products/benq-eh600-projector.jpg",
     description: "Smart business projector for meeting rooms.",
     specs: "Full HD • Wireless • 3500 Lumens",
@@ -124,6 +139,7 @@ const officeEquipment = [
 
   {
     name: "Poly Studio X52",
+    category: "office",
     image: "/images/products/poly-studio-x52.jpg",
     description: "Professional video conferencing solution.",
     specs: "4K Camera • AI Audio • Teams & Zoom",
@@ -131,6 +147,7 @@ const officeEquipment = [
 
   {
     name: "Samsung Flip Pro WM65B",
+    category: "office",
     image: "/images/products/samsung-flip-pro-wm65b.jpg",
     description: "Interactive display for collaboration and training.",
     specs: "65 Inch • Touchscreen • 4K UHD",
@@ -138,6 +155,7 @@ const officeEquipment = [
 
   {
     name: "Logitech Rally Plus",
+    category: "office",
     image: "/images/products/logitech-rally-plus.jpg",
     description: "Enterprise video conferencing system.",
     specs: "4K Camera • Modular Audio • USB",
@@ -148,6 +166,7 @@ const officeEquipment = [
 const softwareLicensing = [
   {
     name: "Microsoft 365 Business Premium",
+    category: "software",
     image: "/images/products/microsoft-365-business-premium.jpg",
     description: "Productivity and security suite for organisations.",
     specs: "Office Apps • Teams • Exchange • Security",
@@ -155,6 +174,7 @@ const softwareLicensing = [
 
   {
     name: "Adobe Creative Cloud Teams",
+    category: "software",
     image: "/images/products/adobe-creative-cloud-teams.jpg",
     description: "Creative software suite for business teams.",
     specs: "Photoshop • Illustrator • InDesign",
@@ -162,6 +182,7 @@ const softwareLicensing = [
 
   {
     name: "Microsoft Defender for Business",
+    category: "software",
     image: "/images/products/microsoft-defender-business.jpg",
     description: "Advanced endpoint protection solution.",
     specs: "Threat Protection • Endpoint Security",
@@ -169,6 +190,7 @@ const softwareLicensing = [
 
   {
     name: "Adobe Acrobat Pro",
+    category: "software",
     image: "/images/products/adobe-acrobat-pro.jpg",
     description: "Professional PDF creation and editing solution.",
     specs: "PDF Editing • eSignatures • Collaboration",
@@ -178,6 +200,7 @@ const softwareLicensing = [
 const accessories = [
   {
     name: "Samsung ViewFinity S6",
+    category: "accessories",
     image: "/images/products/samsung-viewfinity-s6.jpg",
     description: "Professional monitor for office productivity.",
     specs: '27" QHD • USB-C • IPS Display',
@@ -185,6 +208,7 @@ const accessories = [
 
   {
     name: "Logitech MX Keys S",
+    category: "accessories",
     image: "/images/products/logitech-mx-keys-s.jpg",
     description: "Premium wireless keyboard for professionals.",
     specs: "Bluetooth • Backlit Keys • Multi-Device",
@@ -192,6 +216,7 @@ const accessories = [
 
   {
     name: "Dell Universal Dock UD22",
+    category: "accessories",
     image: "/images/products/dell-universal-dock-ud22.jpg",
     description: "Universal docking station for modern workplaces.",
     specs: "USB-C • Multi-Display • Power Delivery",
@@ -199,6 +224,7 @@ const accessories = [
 
   {
     name: "Logitech Brio 4K",
+    category: "accessories",
     image: "/images/products/logitech-brio-4K.jpg",
     description: "Ultra HD webcam for conferencing and collaboration.",
     specs: "4K Resolution • HDR • USB-C",
@@ -231,7 +257,8 @@ const accessories = [
         <div className="flex flex-wrap justify-center gap-3">
           <button
             onClick={() => setSelectedCategory("all")}
-          >
+            className="border border-green-800 text-green-800 px-4 py-2 rounded-lg"
+>
             All Products
           </button>
   
@@ -244,24 +271,28 @@ const accessories = [
 
           <button
             onClick={() => setSelectedCategory("print")}
+            className="border border-green-800 text-green-800 px-4 py-2 rounded-lg"
           >
             Managed Print
           </button>
 
           <button
             onClick={() => setSelectedCategory("office")}
+            className="border border-green-800 text-green-800 px-4 py-2 rounded-lg"
           >
             Office Equipment
           </button>
 
           <button
             onClick={() => setSelectedCategory("software")}
+            className="border border-green-800 text-green-800 px-4 py-2 rounded-lg"
           >
             Software
           </button>
 
           <button
             onClick={() => setSelectedCategory("accessories")}
+            className="border border-green-800 text-green-800 px-4 py-2 rounded-lg"
           >
             Accessories
           </button>
