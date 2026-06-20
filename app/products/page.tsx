@@ -93,7 +93,7 @@ const ictHardwareProducts = [
 ];
 
 
-const managedPrintServicesProducts = [
+const managedPrintServices = [
   {
     name: "Epson Workforce Pro WF-C5890",
     category: "print",
@@ -255,44 +255,68 @@ const accessories = [
 
       <section className="mb-12">
         <div className="flex flex-wrap justify-center gap-3">
-          <button
-            onClick={() => setSelectedCategory("all")}
-            className="border border-green-800 text-green-800 px-4 py-2 rounded-lg"
->
-            All Products
-          </button>
+        <button
+          onClick={() => setSelectedCategory("all")}
+          className={`border border-green-800 px-4 py-2 rounded-lg transition ${
+            selectedCategory === "all"
+              ? "bg-green-800 text-white"
+              : "text-green-800 hover:bg-green-800 hover:text-white"
+          }`}
+        >
+          All Products
+        </button>
   
           <button
             onClick={() => setSelectedCategory("ict")}
-            className="border border-green-800 text-green-800 px-4 py-2 rounded-lg"
+            className={`border border-green-800 px-4 py-2 rounded-lg transition ${
+              selectedCategory === "ict"
+                ? "bg-green-800 text-white"
+                : "text-green-800 hover:bg-green-800 hover:text-white"
+            }`}
           >
             ICT Hardware
           </button>
 
           <button
             onClick={() => setSelectedCategory("print")}
-            className="border border-green-800 text-green-800 px-4 py-2 rounded-lg"
+            className={`border border-green-800 px-4 py-2 rounded-lg transition ${
+              selectedCategory === "print"
+                ? "bg-green-800 text-white"
+                : "text-green-800 hover:bg-green-800 hover:text-white"
+            }`}
           >
             Managed Print
           </button>
 
           <button
             onClick={() => setSelectedCategory("office")}
-            className="border border-green-800 text-green-800 px-4 py-2 rounded-lg"
+            className={`border border-green-800 px-4 py-2 rounded-lg transition ${
+              selectedCategory === "office"
+                ? "bg-green-800 text-white"
+                : "text-green-800 hover:bg-green-800 hover:text-white"
+            }`}
           >
             Office Equipment
           </button>
 
           <button
             onClick={() => setSelectedCategory("software")}
-            className="border border-green-800 text-green-800 px-4 py-2 rounded-lg"
+            className={`border border-green-800 px-4 py-2 rounded-lg transition ${
+              selectedCategory === "software"
+                ? "bg-green-800 text-white"
+                : "text-green-800 hover:bg-green-800 hover:text-white"
+            }`}
           >
             Software
           </button>
 
           <button
             onClick={() => setSelectedCategory("accessories")}
-            className="border border-green-800 text-green-800 px-4 py-2 rounded-lg"
+            className={`border border-green-800 px-4 py-2 rounded-lg transition ${
+              selectedCategory === "accessories"
+                ? "bg-green-800 text-white"
+                : "text-green-800 hover:bg-green-800 hover:text-white"
+            }`}
           >
             Accessories
           </button>
@@ -300,11 +324,9 @@ const accessories = [
         </div>
       </section>
 
-        <p className="text-center mt-4 font-semibold">
-          Selected Category: {selectedCategory}
-        </p>
 
       {/* Featured Products */}
+      {selectedCategory === "all" && (
       <section className="mb-20">
         <h2 className="text-4xl font-bold mb-8 text-green-800">
           Technology Catalogue
@@ -340,7 +362,10 @@ const accessories = [
         ))}
       </div>
       </section>
-      <section className="mb-20">
+      )}
+
+      {(selectedCategory === "all" || selectedCategory === "ict") && (
+        <section className="mb-20">
         <h2 className="text-3xl font-bold mb-2 text-green-900">ICT Hardware</h2>
         <div className="w-20 h-1 bg-yellow-500 mb-8"></div>
 
@@ -385,15 +410,16 @@ const accessories = [
             </div>
           ))}
         </div>
-      </section>  
+      </section>
+      )}
 
-
+      {(selectedCategory === "all" || selectedCategory === "print") && (
       <section className="mb-20">
         <h2 className="text-3xl font-bold mb-2 text-green-900">Managed Print Services</h2>
         <div className="w-20 h-1 bg-yellow-500 mb-8"></div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {managedPrintServicesProducts.map((product) => (
+          {managedPrintServices.map((product) => (
             <div
               key={product.name}
               className="
@@ -434,7 +460,9 @@ const accessories = [
           ))}
         </div>
       </section> 
+      )}
 
+{(selectedCategory === "all" || selectedCategory === "office") && (
 <section className="mb-20">
   <h2 className="text-3xl font-bold mb-2 text-green-900">Office Equipment</h2>
   <div className="w-20 h-1 bg-yellow-500 mb-8"></div>
@@ -481,8 +509,10 @@ const accessories = [
     ))}
   </div>
 </section>
+)}
 
-<section className="mb-20">
+{(selectedCategory === "all" || selectedCategory === "software") && (
+  <section className="mb-20">
   <h2 className="text-3xl font-bold mb-2 text-green-900">Software Licensing</h2>
 <div className="w-20 h-1 bg-yellow-500 mb-8"></div>
 
@@ -528,7 +558,12 @@ const accessories = [
     ))}
   </div>
 </section>
+)}
 
+
+
+
+{(selectedCategory === "all" || selectedCategory === "accessories") && (
 <section className="mb-20">
   <h2 className="text-3xl font-bold mb-2 text-green-900">Accessories</h2>
   <div className="w-20 h-1 bg-yellow-500 mb-8"></div>
@@ -575,6 +610,7 @@ const accessories = [
     ))}
   </div>
 </section>
+)}
 
 <section className="text-center py-20">
   <h2 className="text-4xl font-bold mb-6">
