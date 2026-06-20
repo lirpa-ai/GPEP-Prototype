@@ -38,6 +38,16 @@ export default function ContactPage() {
               Sales & Quotations
             </h3>
 
+              <p className="text-gray-700">
+                For quotations and product enquiries, please contact us at{" "}
+                <a
+                  href="mailto:info@treadstonetrading.net"
+                  className="text-green-700 hover:text-green-800 hover:underline"
+                >
+                  info@treadstonetrading.net
+                </a>
+                .
+              </p>
 
           </div>
 
