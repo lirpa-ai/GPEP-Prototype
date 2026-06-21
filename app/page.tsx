@@ -19,81 +19,118 @@ export default function Home() {
 
       </header>
 
-  <section className="text-center py-24 px-6">
+      <section className="relative overflow-hidden bg-gradient-to-r from-blue-950 via-blue-900 to-blue-800 text-white">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute left-10 top-16 grid grid-cols-5 gap-3">
+            {Array.from({ length: 25 }).map((_, index) => (
+              <div
+                key={index}
+                className="h-2 w-2 rounded-full bg-blue-300"
+              />
+            ))}
+          </div>
+        </div>
 
-    <h2 className="text-5xl font-bold mb-6">
-      ICT Hardware, Office Equipment & Procurement Solutions
-    </h2>
+        <div className="relative max-w-6xl mx-auto px-6 py-24 text-center">
+          <div className="w-20 h-1 bg-orange-400 mx-auto mb-8"></div>
 
-        <p className="text-xl max-w-4xl mx-auto mb-10">
-          Delivering technology products, managed print services,
-          software licensing and office equipment solutions for
-          government departments, municipalities and corporate organisations.
-        </p>
+          <p className="text-sm font-semibold tracking-widest uppercase text-orange-300 mb-5">
+            Technology Procurement Solutions
+          </p>
 
-        <div className="flex justify-center gap-4">
-          <Link
-            href="/products"
-            className="px-6 py-3 bg-black text-white rounded"
-          >
-            Browse Products
-          </Link>
+          <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+            ICT Hardware, Office Equipment
+            <br />
+            & Procurement Solutions
+          </h2>
 
-          <Link
-            href="/contact"
-            className="px-6 py-3 border rounded"
-          >
-            Contact Us
-          </Link>
+          <p className="text-lg md:text-xl max-w-3xl mx-auto text-blue-100 mb-10">
+            Remotlotlo Group delivers reliable technology products and procurement
+            support for government departments, municipalities, institutions and
+            corporate organisations.
+          </p>
+
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Link
+              href="/products"
+              className="bg-orange-400 hover:bg-orange-500 text-slate-950 font-semibold px-8 py-4 rounded-lg transition"
+            >
+              Browse Products
+            </Link>
+
+            <Link
+              href="/contact"
+              className="border border-white/70 hover:bg-white hover:text-blue-950 text-white font-semibold px-8 py-4 rounded-lg transition"
+            >
+              Contact Our Team
+            </Link>
+          </div>
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 px-16 py-20">
-        <div className="border rounded-lg p-6">
-            <h3 className="font-bold mb-2">
+        <section className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 px-6 md:px-16 py-14">
+          <div className="border border-blue-100 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+            <div className="w-10 h-1 bg-orange-400 mb-5"></div>
+
+            <h3 className="text-xl font-bold text-blue-950 mb-3">
               ICT Hardware
             </h3>
 
-            <p>
+            <p className="text-[17px] text-gray-700 leading-relaxed">
               Laptops, desktops, workstations and accessories from leading technology brands.
             </p>
-        </div>
+          </div>
 
-        <div className="border rounded-lg p-6">
-            <h3 className="font-bold mb-2">
+          <div className="border border-blue-100 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+            <div className="w-10 h-1 bg-orange-400 mb-5"></div>
+
+            <h3 className="text-xl font-bold text-blue-950 mb-3">
               Managed Print Services
             </h3>
 
-            <p>
+            <p className="text-[17px] text-gray-700 leading-relaxed">
               Professional print fleet management, maintenance and consumables supply.
             </p>
-        </div>
+          </div>
 
-        <div className="border rounded-lg p-6">
-          <h3 className="font-bold mb-2">
-            Office Equipment
-          </h3>
+          <div className="border border-blue-100 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+            <div className="w-10 h-1 bg-orange-400 mb-5"></div>
 
-          <p>
-            Projectors, presentation systems, conferencing equipment and office solutions.
-          </p>
-        </div>
-      </section>
+            <h3 className="text-xl font-bold text-blue-950 mb-3">
+              Office Equipment
+            </h3>
 
-        <section className="max-w-6xl mx-auto py-16 text-center">
-          <h2 className="text-3xl font-bold mb-10">
-            Trusted Technology Brands
-          </h2>
+            <p className="text-[17px] text-gray-700 leading-relaxed">
+              Projectors, presentation systems, conferencing equipment and office solutions.
+            </p>
+          </div>
+        </section>
 
-          <div className="flex flex-wrap justify-center gap-4">
-            <div className="border rounded-lg px-6 py-3">Dell</div>
-            <div className="border rounded-lg px-6 py-3">Lenovo</div>
-            <div className="border rounded-lg px-6 py-3">HP</div>
-            <div className="border rounded-lg px-6 py-3">Microsoft</div>
-            <div className="border rounded-lg px-6 py-3">Epson</div>
-            <div className="border rounded-lg px-6 py-3">Canon</div>
-            <div className="border rounded-lg px-6 py-3">Logitech</div>
-            <div className="border rounded-lg px-6 py-3">Parrot</div>
+        <section className="bg-slate-50 border-y border-slate-100 py-16">
+          <div className="max-w-6xl mx-auto px-6 text-center">
+            <p className="text-sm font-bold tracking-[0.18em] text-orange-500 uppercase mb-3">
+              Technology Ecosystem
+            </p>
+
+            <h2 className="text-3xl font-bold text-blue-950 mb-4">
+              Trusted Technology Brands
+            </h2>
+
+            <p className="max-w-2xl mx-auto text-[17px] text-gray-700 leading-relaxed mb-10">
+              We source technology solutions from recognised global brands to support
+              reliable procurement, deployment and long-term operational needs.
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-3">
+              <div className="bg-white border border-slate-200 rounded-lg px-6 py-3 font-semibold text-blue-950 shadow-sm">Dell</div>
+              <div className="bg-white border border-slate-200 rounded-lg px-6 py-3 font-semibold text-blue-950 shadow-sm">Lenovo</div>
+              <div className="bg-white border border-slate-200 rounded-lg px-6 py-3 font-semibold text-blue-950 shadow-sm">HP</div>
+              <div className="bg-white border border-slate-200 rounded-lg px-6 py-3 font-semibold text-blue-950 shadow-sm">Microsoft</div>
+              <div className="bg-white border border-slate-200 rounded-lg px-6 py-3 font-semibold text-blue-950 shadow-sm">Epson</div>
+              <div className="bg-white border border-slate-200 rounded-lg px-6 py-3 font-semibold text-blue-950 shadow-sm">Canon</div>
+              <div className="bg-white border border-slate-200 rounded-lg px-6 py-3 font-semibold text-blue-950 shadow-sm">Logitech</div>
+              <div className="bg-white border border-slate-200 rounded-lg px-6 py-3 font-semibold text-blue-950 shadow-sm">Parrot</div>
+            </div>
           </div>
         </section>
 
