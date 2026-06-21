@@ -135,84 +135,221 @@ export default function Home() {
         </section>
 
 
-      <section className="max-w-7xl mx-auto px-16 py-20">
-        <h2 className="text-4xl font-bold text-center mb-12">
-          Featured Products
-        </h2>
+        <section className="max-w-7xl mx-auto px-6 md:px-16 py-20">
+          <div className="text-center mb-12">
+            <p className="text-sm font-bold tracking-[0.18em] text-orange-500 uppercase mb-3">
+              Featured Catalogue
+            </p>
+
+            <h2 className="text-4xl font-bold text-blue-950 mb-4">
+              Featured Products
+            </h2>
+
+            <p className="max-w-2xl mx-auto text-[17px] text-gray-700 leading-relaxed">
+              A selection of technology products commonly sourced for government,
+              institutional and corporate procurement requirements.
+            </p>
+          </div>
 
         <div className="grid md:grid-cols-3 gap-6">
 
-          <div className="border rounded-lg p-4">
-            <Image
-              src="/images/products/dell-latitude-5550.jpg"
-              alt="Dell Latitude 5550"
-              width={400}
-              height={250}
-              className="w-full h-48 object-contain mb-4"
-            />
-            <h3 className="font-bold text-lg">Dell Latitude 5550</h3>
-            <p className="text-sm text-gray-600">Business Laptop</p>
-          </div>
+        <div className="border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow bg-white">
+          <Image
+            src="/images/products/dell-latitude-5550.jpg"
+            alt="Dell Latitude 5550 business laptop"
+            width={400}
+            height={250}
+            className="w-full h-48 object-contain mb-5"
+          />
 
-          <div className="border rounded-lg p-4">
-            <Image
-              src="/images/products/lenovo-thinkpad-e16.webp"
-              alt="Lenovo ThinkPad E16"
-              width={400}
-              height={250}
-              className="w-full h-48 object-contain mb-4"
-            />
-            <h3 className="font-bold text-lg">Lenovo ThinkPad E16</h3>
-            <p className="text-sm text-gray-600">Professional Laptop</p>
-          </div>
+          <p className="text-xs font-bold tracking-[0.14em] text-orange-500 uppercase mb-2">
+            ICT Hardware
+          </p>
 
-          <div className="border rounded-lg p-4">
-            <Image
-              src="/images/products/logitech-mk540.jpg"
-              alt="Logitech MK540"
-              width={400}
-              height={250}
-              className="w-full h-48 object-contain mb-4"
-            />
-            <h3 className="font-bold text-lg">Logitech MK540</h3>
-            <p className="text-sm text-gray-600">Keyboard & Mouse Combo</p>
-          </div>
+          <h3 className="text-xl font-bold text-blue-950 mb-2">
+            Dell Latitude 5550
+          </h3>
 
-          <div className="border rounded-lg p-4">
-            <Image
-              src="/images/products/epson-l6570.jpg"
-              alt="Epson L6570"
-              width={400}
-              height={250}
-              className="w-full h-48 object-contain mb-4"
-            />
-            <h3 className="font-bold text-lg">Epson EcoTank L6570</h3>
-            <p className="text-sm text-gray-600">Business Printer</p>
-          </div>
+          <p className="text-[17px] text-gray-700 leading-relaxed mb-3">
+            Business laptop for professional and institutional use.
+          </p>
 
-          <div className="border rounded-lg p-4">
-            <Image
-              src="/images/products/hp-laserjet.jpg"
-              alt="HP LaserJet"
-              width={400}
-              height={250}
-              className="w-full h-48 object-contain mb-4"
-            />
-            <h3 className="font-bold text-lg">HP LaserJet Enterprise</h3>
-            <p className="text-sm text-gray-600">Enterprise Printer</p>
-          </div>
+          <p className="text-sm text-gray-500 mb-5">
+            Intel Core Ultra • 16GB RAM • 512GB SSD
+          </p>
 
-          <div className="border rounded-lg p-4">
-            <Image
-              src="/images/products/parrot-projector.jpg"
-              alt="Parrot Projector"
-              width={400}
-              height={250}
-              className="w-full h-48 object-contain mb-4"
-            />
-            <h3 className="font-bold text-lg">Parrot Projector</h3>
-            <p className="text-sm text-gray-600">Presentation Solution</p>
-          </div>
+          <Link
+            href="/contact"
+            className="inline-block w-full text-center bg-orange-400 hover:bg-orange-500 text-black font-semibold px-4 py-3 rounded-lg"
+          >
+            Request a Quote
+          </Link>
+        </div>
+
+        <div className="border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow bg-white">
+          <Image
+            src="/images/products/lenovo-thinkpad-e16.webp"
+            alt="Lenovo ThinkPad E16 professional laptop"
+            width={400}
+            height={250}
+            className="w-full h-48 object-contain mb-5"
+          />
+
+          <p className="text-xs font-bold tracking-[0.14em] text-orange-500 uppercase mb-2">
+            ICT Hardware
+          </p>
+
+          <h3 className="text-xl font-bold text-blue-950 mb-2">
+            Lenovo ThinkPad E16
+          </h3>
+
+          <p className="text-[17px] text-gray-700 leading-relaxed mb-3">
+            Professional laptop designed for business productivity and everyday deployment.
+          </p>
+
+          <p className="text-sm text-gray-500 mb-5">
+            Intel Core i5 • 16GB RAM • 512GB SSD
+          </p>
+
+          <Link
+            href="/contact"
+            className="inline-block w-full text-center bg-orange-400 hover:bg-orange-500 text-black font-semibold px-4 py-3 rounded-lg"
+          >
+            Request a Quote
+          </Link>
+        </div>
+
+        <div className="border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow bg-white">
+          <Image
+            src="/images/products/logitech-mk540.jpg"
+            alt="Logitech MK540 keyboard and mouse combo"
+            width={400}
+            height={250}
+            className="w-full h-48 object-contain mb-5"
+          />
+
+          <p className="text-xs font-bold tracking-[0.14em] text-orange-500 uppercase mb-2">
+            Accessories
+          </p>
+
+          <h3 className="text-xl font-bold text-blue-950 mb-2">
+            Logitech MK540
+          </h3>
+
+          <p className="text-[17px] text-gray-700 leading-relaxed mb-3">
+            Full-size wireless keyboard and mouse combination for office workstations.
+          </p>
+
+          <p className="text-sm text-gray-500 mb-5">
+            Wireless • Full-size layout • Long battery life
+          </p>
+
+          <Link
+            href="/contact"
+            className="inline-block w-full text-center bg-orange-400 hover:bg-orange-500 text-black font-semibold px-4 py-3 rounded-lg"
+          >
+            Request a Quote
+          </Link>
+        </div>
+
+        <div className="border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow bg-white">
+          <Image
+            src="/images/products/epson-l6570.jpg"
+            alt="Epson EcoTank L6570 business printer"
+            width={400}
+            height={250}
+            className="w-full h-48 object-contain mb-5"
+          />
+
+          <p className="text-xs font-bold tracking-[0.14em] text-orange-500 uppercase mb-2">
+            Managed Print
+          </p>
+
+          <h3 className="text-xl font-bold text-blue-950 mb-2">
+            Epson EcoTank L6570
+          </h3>
+
+          <p className="text-[17px] text-gray-700 leading-relaxed mb-3">
+            High-volume business printer suited to efficient office printing requirements.
+          </p>
+
+          <p className="text-sm text-gray-500 mb-5">
+            Print • Scan • Copy • Refillable ink system
+          </p>
+
+          <Link
+            href="/contact"
+            className="inline-block w-full text-center bg-orange-400 hover:bg-orange-500 text-black font-semibold px-4 py-3 rounded-lg"
+          >
+            Request a Quote
+          </Link>
+        </div>  
+
+        <div className="border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow bg-white">
+          <Image
+            src="/images/products/hp-laserjet.jpg"
+            alt="HP LaserJet Enterprise printer"
+            width={400}
+            height={250}
+            className="w-full h-48 object-contain mb-5"
+          />
+
+          <p className="text-xs font-bold tracking-[0.14em] text-orange-500 uppercase mb-2">
+            Managed Print
+          </p>
+
+          <h3 className="text-xl font-bold text-blue-950 mb-2">
+            HP LaserJet Enterprise
+          </h3>
+
+          <p className="text-[17px] text-gray-700 leading-relaxed mb-3">
+            Enterprise laser printer for secure, reliable and high-demand office environments.
+          </p>
+
+          <p className="text-sm text-gray-500 mb-5">
+            Laser printing • Network ready • Enterprise security
+          </p>
+
+          <Link
+            href="/contact"
+            className="inline-block w-full text-center bg-orange-400 hover:bg-orange-500 text-black font-semibold px-4 py-3 rounded-lg"
+          >
+            Request a Quote
+          </Link>
+        </div>
+
+        <div className="border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow bg-white">
+          <Image
+            src="/images/products/parrot-projector.jpg"
+            alt="Parrot projector for presentations"
+            width={400}
+            height={250}
+            className="w-full h-48 object-contain mb-5"
+          />
+
+          <p className="text-xs font-bold tracking-[0.14em] text-orange-500 uppercase mb-2">
+            Office Equipment
+          </p>
+
+          <h3 className="text-xl font-bold text-blue-950 mb-2">
+            Parrot Projector
+          </h3>
+
+          <p className="text-[17px] text-gray-700 leading-relaxed mb-3">
+            Projector for meeting rooms, training spaces and collaborative environments.
+          </p>
+
+          <p className="text-sm text-gray-500 mb-5">
+            Full HD • HDMI connectivity • Meeting room use
+          </p>
+
+          <Link
+            href="/contact"
+            className="inline-block w-full text-center bg-orange-400 hover:bg-orange-500 text-black font-semibold px-4 py-3 rounded-lg"
+          >
+            Request a Quote
+          </Link>
+        </div>
 
         </div>
       </section>

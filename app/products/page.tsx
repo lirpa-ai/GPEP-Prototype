@@ -1,4 +1,10 @@
+"use client";
+
+import { useState } from "react";
 export default function ProductsPage() {
+const [selectedCategory, setSelectedCategory] = useState<
+  "all" | "hardware" | "print" | "office" | "software" | "accessories"
+>("all");
  const featuredProducts = [
   {
     name: "Dell Latitude 5550",
@@ -24,7 +30,7 @@ export default function ProductsPage() {
   {
     name: "HP LaserJet Enterprise",
     image: "/images/products/hp-laserjet.jpg",
-    description: "Fast and dependable office printing solution.",
+    description: "Fast dependable office printing solution.",
     specs: "40ppm • Duplex • Enterprise Security",
   },
 
@@ -112,7 +118,7 @@ const officeEquipment = [
     name: "Epson EB-FH52",
     image: "/images/products/epson-eb-fh52.jpg",
     description: "Wireless projector for business presentations.",
-    specs: "4000 Lumens • Full HD • Wireless",
+    specs: "4000 Lumens • Full HD",
   },
 
   {
@@ -135,7 +141,7 @@ const softwareLicensing = [
   {
     name: "Microsoft 365 Business",
     image: "/images/products/microsoft365.jpg",
-    description: "Cloud productivity suite for organisations.",
+    description: "Latest Microsoft Cloud productivity suite for organisations.",
     specs: "Email • Teams • Office Apps",
   },
 
@@ -180,18 +186,77 @@ const accessories = [
     name: "Dell WD19 Dock",
     image: "/images/products/dell-wd19-dock.jpg",
     description: "USB-C docking station for modern laptops.",
-    specs: "USB-C • Dual Display • Power Delivery",
+    specs: "Dual Display • Power Delivery",
   },
 
   {
     name: "Logitech H390 Headset",
     image: "/images/products/logitech-h390-headset.jpg",
-    description: "USB headset for meetings and collaboration.",
-    specs: "USB • Noise Cancelling Mic • Teams Compatible",
+    description: "Teams Compatible Headset for meetings and collaboration.",
+    specs: "USB • Noise Cancelling Mic ",
   },
 ];
 
+const allProducts = [
+  ...ictHardwareProducts.map((product) => ({
+    ...product,
+    category: "hardware",
+  })),
+  ...managedPrintServicesProducts.map((product) => ({
+    ...product,
+    category: "print",
+  })),
+  ...officeEquipment.map((product) => ({
+    ...product,
+    category: "office",
+  })),
+  ...softwareLicensing.map((product) => ({
+    ...product,
+    category: "software",
+  })),
+  ...accessories.map((product) => ({
+    ...product,
+    category: "accessories",
+  })),
+];
 
+const categoryDetails = {
+  all: {
+    label: "All Products",
+    description:
+      "Browse our full range of technology products and procurement solutions.",
+  },
+  hardware: {
+    label: "ICT Hardware",
+    description:
+      "Business laptops, desktops and essential technology hardware.",
+  },
+  print: {
+    label: "Managed Print Services",
+    description:
+      "Reliable printing, multifunction and document-management solutions.",
+  },
+  office: {
+    label: "Office Equipment",
+    description:
+      "Meeting-room, presentation and collaboration technology.",
+  },
+  software: {
+    label: "Software Licensing",
+    description:
+      "Business software, security and productivity licensing solutions.",
+  },
+  accessories: {
+    label: "Accessories",
+    description:
+      "Essential accessories to complete and support your technology setup.",
+  },
+};
+
+const filteredProducts =
+  selectedCategory === "all"
+    ? allProducts
+    : allProducts.filter((product) => product.category === selectedCategory);
 
 
   return (
@@ -207,240 +272,206 @@ const accessories = [
       </p>
 
       {/* Featured Products */}
-      <section className="mb-20">
-        <h2 className="text-3xl font-bold mb-8">Featured Products</h2>
 
-       <div className="grid md:grid-cols-3 gap-8">
-        {featuredProducts.map((product) => (
-          <div
-            key={product.name}
-            className="border rounded-lg p-6 flex flex-col h-full"
-          >
-            <img
-              src={product.image}
-              alt={product.name}
-              className="w-full h-48 object-contain mb-4"
-            />
 
-            <h3 className="text-2xl font-bold mb-2">
-              {product.name}
-            </h3>
 
-            <p className="mb-2">
-              {product.description}
-            </p>
+        <section className="mb-20 bg-blue-50 border-y border-blue-100 py-16 w-screen relative left-1/2 -translate-x-1/2">
+          <div className="max-w-6xl mx-auto px-6">
+              <div className="mb-10">
+                <div className="h-1 w-16 bg-orange-500 mb-4"></div>
 
-            <p className="text-sm text-gray-600">
-              {product.specs}
-              <button className="mt-4 bg-black text-white px-4 py-2 rounded">
-                Request Quote
-              </button>             
-            </p>
+                <p className="text-sm font-semibold uppercase tracking-widest text-blue-700 mb-2">
+                  Selected for procurement teams
+                </p>
+
+                <h2 className="text-4xl font-bold text-blue-950 mb-3">
+                  Featured Products
+                </h2>
+
+                <p className="max-w-2xl text-gray-700">
+                  A curated selection of reliable technology solutions for modern workplaces.
+                </p>
+              </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+                  {featuredProducts.map((product) => (
+                    <div
+                      key={product.name}
+                      className="bg-white border border-blue-100 rounded-xl p-6 flex flex-col h-full shadow-sm hover:shadow-md transition-shadow"
+                    >
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-48 object-contain mb-4"
+                      />
+
+                      <h3 className="text-2xl font-bold mb-2">
+                        {product.name}
+                      </h3>
+
+                      <p className="mb-2">
+                        {product.description}
+                      </p>
+
+                      <p className="text-sm text-gray-600">
+                        {product.specs}
+                        <button className="mt-4 bg-orange-500 text-black font-semibold px-4 py-2 rounded-lg hover:bg-orange-400 transition-colors">
+                          Request Quote
+                        </button>           
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
           </div>
-        ))}
-      </div>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">Browse by Category</h2>
+
+          <div className="flex flex-wrap gap-3">
+            <button
+              onClick={() => setSelectedCategory("all")}
+                className={`px-5 py-2 rounded-lg font-semibold transition-colors ${
+                  selectedCategory === "all"
+                    ? "bg-blue-900 text-white border border-blue-900 shadow-sm"
+                    : "bg-white text-blue-950 border border-blue-200 hover:border-orange-500 hover:text-blue-900"
+                }`}
+            >
+              All Products
+            </button>
+
+            <button
+              onClick={() => setSelectedCategory("hardware")}
+                className={`px-5 py-2 rounded-lg font-semibold transition-colors ${
+                  selectedCategory === "hardware"
+                    ? "bg-blue-900 text-white border border-blue-900 shadow-sm"
+                    : "bg-white text-blue-950 border border-blue-200 hover:border-orange-500 hover:text-blue-900"
+                }`}
+            >
+              ICT Hardware
+            </button>
+
+            <button
+              onClick={() => setSelectedCategory("print")}
+                className={`px-5 py-2 rounded-lg font-semibold transition-colors ${
+                  selectedCategory === "print"
+                    ? "bg-blue-900 text-white border border-blue-900 shadow-sm"
+                    : "bg-white text-blue-950 border border-blue-200 hover:border-orange-500 hover:text-blue-900"
+                }`}
+            >
+              Managed Print
+            </button>
+
+            <button
+              onClick={() => setSelectedCategory("office")}
+                className={`px-5 py-2 rounded-lg font-semibold transition-colors ${
+                  selectedCategory === "office"
+                    ? "bg-blue-900 text-white border border-blue-900 shadow-sm"
+                    : "bg-white text-blue-950 border border-blue-200 hover:border-orange-500 hover:text-blue-900"
+                }`}
+            >
+              Office Equipment
+            </button>
+
+            <button
+              onClick={() => setSelectedCategory("software")}
+                className={`px-5 py-2 rounded-lg font-semibold transition-colors ${
+                  selectedCategory === "software"
+                    ? "bg-blue-900 text-white border border-blue-900 shadow-sm"
+                    : "bg-white text-blue-950 border border-blue-200 hover:border-orange-500 hover:text-blue-900"
+                }`}
+            >
+              Software Licensing
+            </button>
+
+            <button
+              onClick={() => setSelectedCategory("accessories")}
+                className={`px-5 py-2 rounded-lg font-semibold transition-colors ${
+                  selectedCategory === "accessories"
+                    ? "bg-blue-900 text-white border border-blue-900 shadow-sm"
+                    : "bg-white text-blue-950 border border-blue-200 hover:border-orange-500 hover:text-blue-900"
+                }`}
+            >
+              Accessories
+            </button>
+          </div>
+        </section>
+
+
+
+      <section className="mb-20">
+    <div className="mb-8">
+      <p className="text-sm font-bold tracking-wider text-blue-700 mb-2">
+        PRODUCT CATALOGUE
+      </p>
+
+      <h2 className="text-3xl font-bold text-blue-950 mb-2">
+        {categoryDetails[selectedCategory].label}
+      </h2>
+
+      <p className="text-gray-600">
+        {categoryDetails[selectedCategory].description}
+      </p>
+    </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+          {filteredProducts.map((product) => (
+            <div
+              key={product.name}
+              className="bg-white border border-blue-100 rounded-xl p-6 flex flex-col h-full shadow-sm hover:shadow-md transition-shadow"
+            >
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-48 object-contain mb-4"
+              />
+
+              <h3 className="text-xl font-bold mb-3">{product.name}</h3>
+
+              <p className="mb-3">{product.description}</p>
+
+              <p className="text-gray-600 mb-4">{product.specs}</p>
+
+              <button className="mt-4 bg-orange-500 text-black font-semibold px-4 py-2 rounded-lg hover:bg-orange-400 transition-colors">
+                Request Quote
+              </button>
+            </div>
+          ))}
+        </div>
       </section>
-      <section className="mb-20">
-        <h2 className="text-3xl font-bold mb-8">ICT Hardware</h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {ictHardwareProducts.map((product) => (
-            <div
-              key={product.name}
-              className="border rounded-lg p-6 flex flex-col"
-            >
-              <img
-                src={product.image}
-                alt={product.name}
-                className="w-full h-48 object-contain mb-4"
-              />
+<section className="bg-blue-50 border-y border-blue-100 py-20 w-screen relative left-1/2 -translate-x-1/2">
+  <div className="max-w-4xl mx-auto px-6 text-center">
+    <div className="h-1 w-16 bg-orange-500 mx-auto mb-5"></div>
 
-              <h3 className="text-2xl font-bold mb-3">
-                {product.name}
-              </h3>
+    <p className="text-sm font-semibold uppercase tracking-widest text-blue-700 mb-3">
+      Procurement Support
+    </p>
 
-              <p className="mb-3">
-                {product.description}
-              </p>
+    <h2 className="text-4xl font-bold text-blue-950 mb-4">
+      Need a Custom Solution?
+    </h2>
 
-              <p className="text-gray-600 mb-4">
-                {product.specs}
-              </p>
+    <p className="max-w-3xl mx-auto text-lg text-gray-700 mb-8">
+      From standard technology requirements to tailored workplace solutions,
+      Remotlotlo Group provides dependable procurement support, product
+      availability guidance and coordinated delivery for organisations across
+      South Africa.
+    </p>
 
-              <button className="mt-auto bg-black text-white px-4 py-2 rounded">
-                Request Quote
-              </button>
-            </div>
-          ))}
-        </div>
-      </section>  
+    <div className="flex flex-col sm:flex-row justify-center gap-4">
+      <button className="bg-orange-500 text-black font-semibold px-7 py-3 rounded-lg hover:bg-orange-400 transition-colors">
+        Request a Quotation
+      </button>
 
-
-      <section className="mb-20">
-        <h2 className="text-3xl font-bold mb-8">Managed Print Services</h2>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {managedPrintServicesProducts.map((product) => (
-            <div
-              key={product.name}
-              className="border rounded-lg p-6 flex flex-col"
-            >
-              <img
-                src={product.image}
-                alt={product.name}
-                className="w-full h-48 object-contain mb-4"
-              />
-
-              <h3 className="text-2xl font-bold mb-3">
-                {product.name}
-              </h3>
-
-              <p className="mb-3">
-                {product.description}
-              </p>
-
-              <p className="text-gray-600 mb-4">
-                {product.specs}
-              </p>
-
-              <button className="mt-auto bg-black text-white px-4 py-2 rounded">
-                Request Quote
-              </button>
-            </div>
-          ))}
-        </div>
-      </section> 
-
-<section className="mb-20">
-  <h2 className="text-3xl font-bold mb-8">
-    Office Equipment
-  </h2>
-
-  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-    {officeEquipment.map((product) => (
-      <div
-        key={product.name}
-        className="border rounded-lg p-6 flex flex-col"
-      >
-        <img
-          src={product.image}
-          alt={product.name}
-          className="w-full h-48 object-contain mb-4"
-        />
-
-        <h3 className="text-2xl font-bold mb-3">
-          {product.name}
-        </h3>
-
-        <p className="mb-3">
-          {product.description}
-        </p>
-
-        <p className="text-gray-600 mb-4">
-          {product.specs}
-        </p>
-
-        <button className="mt-auto bg-black text-white px-4 py-2 rounded">
-          Request Quote
-        </button>
-      </div>
-    ))}
+      <button className="border border-blue-800 text-blue-900 font-semibold px-7 py-3 rounded-lg hover:bg-blue-100 transition-colors">
+        Contact Our Team
+      </button>
+    </div>
   </div>
-</section>
-
-<section className="mb-20">
-  <h2 className="text-3xl font-bold mb-8">
-    Software Licensing
-  </h2>
-
-  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-    {softwareLicensing.map((product) => (
-      <div
-        key={product.name}
-        className="border rounded-lg p-6 flex flex-col"
-      >
-        <img
-          src={product.image}
-          alt={product.name}
-          className="w-full h-48 object-contain mb-4"
-        />
-
-        <h3 className="text-2xl font-bold mb-3">
-          {product.name}
-        </h3>
-
-        <p className="mb-3">
-          {product.description}
-        </p>
-
-        <p className="text-gray-600 mb-4">
-          {product.specs}
-        </p>
-
-        <button className="mt-auto bg-black text-white px-4 py-2 rounded">
-          Request Quote
-        </button>
-      </div>
-    ))}
-  </div>
-</section>
-
-
-
-<section className="mb-20">
-  <h2 className="text-3xl font-bold mb-8">
-    Accessories
-  </h2>
-
-  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-    {accessories.map((product) => (
-      <div
-        key={product.name}
-        className="border rounded-lg p-6 flex flex-col"
-      >
-        <img
-          src={product.image}
-          alt={product.name}
-          className="w-full h-48 object-contain mb-4"
-        />
-
-        <h3 className="text-2xl font-bold mb-3">
-          {product.name}
-        </h3>
-
-        <p className="mb-3">
-          {product.description}
-        </p>
-
-        <p className="text-gray-600 mb-4">
-          {product.specs}
-        </p>
-
-        <button className="mt-auto bg-black text-white px-4 py-2 rounded">
-          Request Quote
-        </button>
-      </div>
-    ))}
-  </div>
-</section>
-
-<section className="text-center py-20">
-  <h2 className="text-4xl font-bold mb-6">
-    Need a Custom Solution?
-  </h2>
-
-  <p className="max-w-3xl mx-auto text-lg mb-8">
-    Remotlotlo Group supplies ICT hardware, managed print services,
-    software licensing and office technology solutions to government,
-    education and corporate clients throughout South Africa.
-  </p>
-
-  <a
-    href="/contact"
-    className="bg-black text-white px-8 py-4 rounded text-lg"
-  >
-    Request a Quotation
-  </a>
 </section>
 
     </main>
