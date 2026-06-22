@@ -4,8 +4,11 @@ export default function Home() {
   return (
 <main className="min-h-screen bg-white">
 
+        <div className="h-px bg-slate-200"></div>
+        <div className="h-2 bg-orange-400"></div>
 
       <section className="relative overflow-hidden bg-gradient-to-r from-blue-950 via-blue-900 to-blue-800 text-white">
+
         <div className="absolute inset-0 opacity-20">
           <div className="absolute left-10 top-16 grid grid-cols-5 gap-3">
             {Array.from({ length: 25 }).map((_, index) => (
