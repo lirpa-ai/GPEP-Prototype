@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function AboutPage() {
   const services = [
     {
@@ -56,14 +54,6 @@ return (
   <>
     <main className="min-h-screen max-w-5xl mx-auto px-6 py-16">
 <section className="mb-20">
-  <div className="flex justify-center mb-6">
-    <Image
-      src="/images/remotlotlogroup_logo.png"
-      alt="Remotlotlo Group"
-      width={92}
-      height={92}
-    />
-  </div>
 
   <div className="h-1 w-16 bg-orange-500 mb-5"></div>
 

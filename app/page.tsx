@@ -4,20 +4,6 @@ export default function Home() {
   return (
 <main className="min-h-screen bg-white">
 
-      <header className="flex justify-between items-center p-6 border-b">
-          <div className="flex items-center">
-            <Image
-              src="/images/remotlotlogroup_logo.png"
-              alt="Remotlotlo Group"
-              width={60}
-              height={60}
-            />
-            <h1 className="text-3xl font-bold mb-4">
-              Remotlotlo Group
-            </h1>          
-          </div>
-
-      </header>
 
       <section className="relative overflow-hidden bg-gradient-to-r from-blue-950 via-blue-900 to-blue-800 text-white">
         <div className="absolute inset-0 opacity-20">
