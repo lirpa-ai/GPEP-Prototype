@@ -4,7 +4,11 @@ export default function Home() {
   return (
 <main className="min-h-screen bg-white">
 
+<div className="h-px bg-gray-200"></div>
+<div className="h-2 bg-yellow-400"></div>
+
   <section className="text-center py-24 px-6 bg-gradient-to-r from-green-900 via-green-800 to-green-700 text-white">
+
 
     <h2 className="text-5xl font-bold mb-6 text-white">
           ICT Hardware, Office Equipment & Procurement Solutions
